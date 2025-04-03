@@ -8,10 +8,9 @@ print("Abro la despensa")
 hay_colacao = input("¿Hay ColaCao en la despensa? [S/N]")
 hay_galletas = input("¿Hay Galletas en la despensa? [S/N]")
 
-
 # Una vez que he comprobado, si falta cualquier ingrediente tengo
 # que ir al super
-if hay_colacao != "S" or hay_leche != "S" or hay_galletas!= "S":
+if hay_colacao != "S" or hay_leche != "S" or hay_galletas != "S":
     print("Tengo que ir al super. Me falta algún ingrediente")
     # Me falta leche
     if hay_leche != "S":

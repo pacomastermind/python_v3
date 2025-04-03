@@ -9,7 +9,7 @@ hay_leche = input("¿Hay leche en la nevera? [S/N]")
 if hay_leche == "S":
     # SI hay leche
     print("Hay leche en la nevera")
-    #Segundo punto de control. ¿Hay colacao?
+    # Segundo punto de control. ¿Hay colacao?
     print("Abro la despensa")
     hay_colacao = input("¿Hay ColaCao en la despensa? [S/N]")
     if hay_colacao == "S":
