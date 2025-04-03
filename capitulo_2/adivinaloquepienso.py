@@ -7,10 +7,10 @@ print(titulo.upper())
 print("-" * len(titulo))
 
 # Ronda de preguntas
-primerapregunta = int(input("¿Qué móvil crees que estoy usando?\n"
+primera_pregunta = int(input("¿Qué móvil crees que estoy usando?\n"
                "[1] El último iPhone\n"
                "[2] El mejor del momento\n"))
-segundapregunta = int(input("¿En qué plato de comida crees que estoy pensando?\n"
+segunda_pregunta = int(input("¿En qué plato de comida crees que estoy pensando?\n"
                "[1] Tortilla española\n"
                "[2] Paella valenciana\n"
                "[3] Asado Uruguayo\n"))
@@ -18,7 +18,7 @@ tercerapregunta = int(input("¿En qué numero del 1 al 10 estoy pensando?\n"))
 numeroaleatorio = randint(1,10)
 
 #Resolvemos
-if primerapregunta == 2 and segundapregunta == 3 and tercerapregunta == numeroaleatorio:
+if primera_pregunta == 2 and segunda_pregunta == 3 and tercerapregunta == numeroaleatorio:
     print("GUAUUUUUU. Eres un crack")
     print("Te tengo que fichar para mis inversiones en bolsa")
 else:

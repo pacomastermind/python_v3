@@ -7,12 +7,12 @@ print(titulo.upper())
 print("-" * len(titulo))
 
 # Primera pregunta sobre el tipo de SO
-tiposo = input("¿Qué tipo de SO quieres?\n"
+tipo_so = input("¿Qué tipo de SO quieres?\n"
                "[I]iOS\n"
                "[A]Android\n").upper()
 
 # Comenzamos con el resto de preguntas dependiendo del SO
-if (tiposo == "I"):
+if (tipo_so == "I"):
     # comenzamos con el tipo iOS
     print("iOS")
     gasto = input("¿Cuanto te quieres gastar?\n"
@@ -40,7 +40,7 @@ if (tiposo == "I"):
         print("El precio es de: 959€")
     else:
         print("Tu ejección no corresponde a ninguna opción válida")
-elif (tiposo == "A"):
+elif (tipo_so == "A"):
     # comenzamos con el tipo Android
     print("Android")
     tipo = input("¿Qué tipo de móvil buscas?\n"

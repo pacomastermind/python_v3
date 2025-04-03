@@ -3,16 +3,16 @@ print("Voy hacia la cocina")
 
 # El primer paso será comprobar si hay leche
 print("Abro la nevera")
-hayleche = input("¿Hay leche en la nevera? [S/N]")
+hay_leche = input("¿Hay leche en la nevera? [S/N]")
 
 # Punto de control. ¿Hay leche?
-if hayleche == "S":
+if hay_leche == "S":
     # SI hay leche
     print("Hay leche en la nevera")
     #Segundo punto de control. ¿Hay colacao?
     print("Abro la despensa")
-    haycolacao = input("¿Hay ColaCao en la despensa? [S/N]")
-    if haycolacao == "S":
+    hay_colacao = input("¿Hay ColaCao en la despensa? [S/N]")
+    if hay_colacao == "S":
         # SI hay colacao. Y también leche
         print("Hay colacao en la despensa")
         print("Mezclo la leche con el Colacao")
