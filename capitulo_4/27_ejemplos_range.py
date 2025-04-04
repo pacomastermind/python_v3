@@ -16,11 +16,11 @@
 
 numero = int(input("Numero para generar la tabla de multiplicar: "))
 
-for n in range(1,11):
+for n in range(1, 11):
     print(f"{numero} x {n} = {n * numero}")
 
 print("------------------")
 
-for n in range(1,11):
-    if n%2 ==0:
+for n in range(1, 11):
+    if n % 2 == 0:
         print(f"{numero} x {n} = {n * numero}")
