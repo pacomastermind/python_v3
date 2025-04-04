@@ -1,5 +1,5 @@
 # En este fichero realizaremos diversos ejemplos con el bucle for
-lista_numeros = [1,2,3,4,5,6,7,8,9,10]
+lista_numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 for item in lista_numeros:
     print(item)
@@ -17,7 +17,7 @@ for letra in frase:
     print(letra.upper())
 
 # Ejemplo cuenta vocales
-vocales = ["a","e","i","o","u"]
+vocales = ["a", "e", "i", "o", "u"]
 cuenta_vocales = 0
 
 for letra in frase:
@@ -29,15 +29,14 @@ print(f"Hemos encontrado {cuenta_vocales} vocales dentro de la frase")
 
 # Repetir n veces dentro del for
 
-for i in [0,1,2]:
+for i in [0, 1, 2]:
     print("WARNING!")
-
 
 for i in range(3):
     print("WARNING!")
 
-for i in range(1,11):
+for i in range(1, 11):
     print(f"WARNING {i}!")
 
-for i in range(10,0,-1):
+for i in range(10, 0, -1):
     print(f"Despegue en {i}!")
