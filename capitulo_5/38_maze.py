@@ -16,7 +16,7 @@ symbol_to_draw = SP_SYMBOL
 PL_SYMBOL = " @ "
 POS_X = 0
 POS_Y = 1
-player_position = [randint(0,MAP_WIDTH-1),randint(0,MAP_HEIGHT-1)]
+player_position = [randint(0, MAP_WIDTH - 1), randint(0, MAP_HEIGHT - 1)]
 
 # Objects
 NUM_MAP_OBJECTS = 10
@@ -25,7 +25,7 @@ map_objects = []
 
 # Creating objects
 while len(map_objects) < NUM_MAP_OBJECTS:
-    new_object = [randint(0,MAP_WIDTH-1),randint(0,MAP_HEIGHT-1)]
+    new_object = [randint(0, MAP_WIDTH - 1), randint(0, MAP_HEIGHT - 1)]
 
     # Check player position and in object list
     if new_object != player_position and new_object not in map_objects:
