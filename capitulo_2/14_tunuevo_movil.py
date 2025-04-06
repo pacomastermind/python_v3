@@ -15,30 +15,30 @@ tipo_so = input("¿Qué tipo de SO quieres?\n"
 if tipo_so == "I":
     # comenzamos con el tipo iOS
     print("iOS")
-    gasto = input("¿Cuánto te quieres gastar?\n"
-                  "[N]No tengo problema\n"
-                  "[S]Suficiente\n"
-                  "[P]Poco\n").upper()
-    modelo = input("¿Quieres tener el último modelo?\n"
-                   "[S]Por supuestísimo\n"
-                   "[N]Me da lo mismo. Mientras sea un Apple\n").upper()
+    presupuesto = input("¿Cuánto te quieres gastar?\n"
+                        "[N]No tengo problema\n"
+                        "[S]Lo suficiente\n"
+                        "[P]Poco\n").upper()
+    modelo_nuevo = input("¿Quieres tener el último modelo?\n"
+                         "[S]Por supuestísimo\n"
+                         "[N]Me da lo mismo. Mientras sea de Apple\n").upper()
     # Árbol de decisiones iOS
-    if gasto == "P" and modelo == "S":
+    if presupuesto == "P" and modelo_nuevo == "S":
         print("Tu móvil ideal es: iPhone 16e")
         print("El precio es de: 709€")
-    elif gasto == "P" and modelo == "N":
+    elif presupuesto == "P" and modelo_nuevo == "N":
         print("Tu móvil ideal es: iPhone 14")
         print("El precio es de: 599€")
-    elif gasto == "S" and modelo == "S":
+    elif presupuesto == "S" and modelo_nuevo == "S":
         print("Tu móvil ideal es: iPhone 16")
         print("El precio es de: 959€")
-    elif gasto == "S" and modelo == "N":
+    elif presupuesto == "S" and modelo_nuevo == "N":
         print("Tu móvil ideal es: iPhone 15 Pro")
         print("El precio es de: 1219€")
-    elif gasto == "N" and modelo == "S":
+    elif presupuesto == "N" and modelo_nuevo == "S":
         print("Tu móvil ideal es: iPhone 16 Pro Max")
         print("El precio es de: 1479€")
-    elif gasto == "N" and modelo == "N":
+    elif presupuesto == "N" and modelo_nuevo == "N":
         print("Tu móvil ideal es: iPhone 15 Pro Max")
         print("El precio es de: 1449€")
     else:
