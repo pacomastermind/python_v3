@@ -15,31 +15,35 @@ tipo_so = input("¿Qué tipo de SO quieres?\n"
 if tipo_so == "I":
     # comenzamos con el tipo iOS
     print("iOS")
-    gasto = input("¿Cuanto te quieres gastar?\n"
+    gasto = input("¿Cuánto te quieres gastar?\n"
                   "[N]No tengo problema\n"
                   "[S]Suficiente\n"
                   "[P]Poco\n").upper()
     modelo = input("¿Quieres tener el último modelo?\n"
                    "[S]Por supuestísimo\n"
                    "[N]Me da lo mismo. Mientras sea un Apple\n").upper()
-    # Montamos el arbol de decisiones
-    if gasto == "P":
+    # Árbol de decisiones iOS
+    if gasto == "P" and modelo == "S":
         print("Tu móvil ideal es: iPhone 16e")
         print("El precio es de: 709€")
+    elif gasto == "P" and modelo == "N":
+        print("Tu móvil ideal es: iPhone 14")
+        print("El precio es de: 599€")
     elif gasto == "S" and modelo == "S":
         print("Tu móvil ideal es: iPhone 16")
         print("El precio es de: 959€")
     elif gasto == "S" and modelo == "N":
-        print("Tu móvil ideal es: iPhone 15")
-        print("El precio es de: 859€")
+        print("Tu móvil ideal es: iPhone 15 Pro")
+        print("El precio es de: 1219€")
     elif gasto == "N" and modelo == "S":
         print("Tu móvil ideal es: iPhone 16 Pro Max")
-        print("El precio es de: 1219€")
+        print("El precio es de: 1479€")
     elif gasto == "N" and modelo == "N":
-        print("Tu móvil ideal es: iPhone 15 Plus")
-        print("El precio es de: 959€")
+        print("Tu móvil ideal es: iPhone 15 Pro Max")
+        print("El precio es de: 1449€")
     else:
-        print("Tu ejección no corresponde a ninguna opción válida")
+        print("Tu elección no corresponde a ninguna opción válida")
+
 elif tipo_so == "A":
     # comenzamos con el tipo Android
     print("Android")
@@ -50,27 +54,27 @@ elif tipo_so == "A":
     camara = input("¿Te importa la cámara?\n"
                    "[S]Por supuestísimo\n"
                    "[N]Me da lo mismo. Mientras pueda usar WhatsApp\n").upper()
-    # Montamos el arbol de decisiones
-    if tipo == "A" and camara == "S":
-        print("Tu móvil ideal es: Xiaomi 15 Ultra")
-        print("El precio es de: 1021€")
-    elif tipo == "M" and camara == "S":
-        print("Tu móvil ideal es: Pixel 7a")
-        print("El precio es de: 448€")
-    elif tipo == "B" and camara == "S":
-        print("Tu móvil ideal es: Redmi Note 12")
-        print("El precio es de: 249€")
-    elif tipo == "A" and camara == "N":
-        print("Tu móvil ideal es: Samsung Galaxy S25")
-        print("El precio es de: 1459€")
-    elif tipo == "M" and camara == "N":
-        print("Tu móvil ideal es: Redmi Note 13 Pro+")
-        print("El precio es de: 430€")
+    # Árbol de decisiones Android
+    if tipo == "B" and camara == "S":
+        print("Tu móvil ideal es: Redmi Note 14 Pro")
+        print("El precio es de: 279€")
     elif tipo == "B" and camara == "N":
         print("Tu móvil ideal es: POCO M6 Pro")
         print("El precio es de: 260€")
+    elif tipo == "M" and camara == "N":
+        print("Tu móvil ideal es: Nothing Phone (3a)")
+        print("El precio es de: 399€")
+    elif tipo == "M" and camara == "S":
+        print("Tu móvil ideal es: Pixel 9a")
+        print("El precio es de: 529€")
+    elif tipo == "A" and camara == "S":
+        print("Tu móvil ideal es: Pixel 9 Pro")
+        print("El precio es de: 1099€")
+    elif tipo == "A" and camara == "N":
+        print("Tu móvil ideal es: Samsung Galaxy S25 Ultra")
+        print("El precio es de: 1459€")
     else:
-        print("Tu ejección no corresponde a ninguna opción válida")
+        print("Tu elección no corresponde a ninguna opción válida")
 else:
-    # No se ha elegido correctamente no podemos ayudar
-    print("Tu ejección no corresponde a ninguna opción válida")
+    # No se ha elegido correctamente
+    print("Tu elección no corresponde a ninguna opción válida")
