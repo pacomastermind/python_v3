@@ -63,10 +63,10 @@ elif tipo_so == "A":
     elif tipo == "A" and camara == "N":
         print("Tu móvil ideal es: Samsung Galaxy S25")
         print("El precio es de: 1459€")
-    elif tipo == "A" and camara == "N":
+    elif tipo == "M" and camara == "N":
         print("Tu móvil ideal es: Redmi Note 13 Pro+")
         print("El precio es de: 430€")
-    elif tipo == "A" and camara == "N":
+    elif tipo == "B" and camara == "N":
         print("Tu móvil ideal es: POCO M6 Pro")
         print("El precio es de: 260€")
     else:
