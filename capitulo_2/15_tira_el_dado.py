@@ -58,3 +58,37 @@ elif numero == 6:
     print("| o   o |")
     print("| o   o |")
     print("+-------+")
+
+
+
+
+3
+print("+-------+")
+print("|       |")
+print("|   o   |")
+print("|       |")
+print("+-------+")
+
+print("+-------+")
+print("| o   o |")
+print("|       |")
+print("| o   o |")
+print("+-------+")
+
+print("+-------+")
+print("| o   o |")
+print("| o   o |")
+print("| o   o |")
+print("+-------+")
+
+print("+-------+")
+print("| o   o |")
+print("|   o   |")
+print("| o   o |")
+print("+-------+")
+
+print("+-------+")
+print("| o     |")
+print("|   o   |")
+print("|     o |")
+print("+-------+")

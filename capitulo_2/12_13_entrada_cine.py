@@ -1,7 +1,4 @@
-# Programa que nos permite calcular el precio final de la entrada de cine
-# aplicando descuentos necesarios
-
-# Comenzamos creando las variables necesarias para calcular el descuento
+# Cálculo de entrada de cine a partir de descuentos
 descuento_edad = 0
 descuento_carnet = 0
 descuento_final = 0
@@ -18,6 +15,17 @@ tipocarnet = input("¿Qué tipo de carnet tienes?\n"
                    "[F]Familia Numerosa\n"
                    "[P]Pensionista\n"
                    "[N]Ninguno\n").upper()
+
+
+tipo_carnet = input("¿Qué tipo de carnet tienes? [E]studiante, [F]am Numerosa, [P]ensionista, [N]inguno").upper()
+
+print("¿Qué tipo de carnet tienes?")
+print("[E]studiante")
+print("[F]amilia Numerosa")
+print("[P]ensionista")
+print("[N]inguno")
+tipo_carnet = input("Elige tu opcion: [E|F|P|N]").upper()
+
 
 # Calculamos el primer descuento a partir de la edad
 if edad < 10 or edad > 70:
@@ -44,8 +52,12 @@ else:
 
 # Calculamos el precio final de la entrada y mostramos por pantalla
 precio_entrada = 6
-preciocon_descuento = precio_entrada - ((descuento_final / 100) * precio_entrada)
+precio_con_descuento = precio_entrada - ((descuento_final / 100) * precio_entrada)
 
 print("-" * len(titulo))
 print(f"Tu entrada cuesta {preciocon_descuento:.2f}€")
 print(f"Se ha aplicado un descuento final del {descuento_final}% sobre {precio_entrada}€")
+
+
+
+
